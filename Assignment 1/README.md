@@ -46,3 +46,9 @@ In production mode, **compression and minification** of Javascript and other res
 
 ## What is async and defer? 
 - https://codedamn.com/news/javascript/async-and-defer-in-script-tag
+
+## CDN LINKS
+https://legacy.reactjs.org/docs/cdn-links.html
+
+## REACT ELEMENT 
+https://react.dev/reference/react/createElement
