@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- UTF-8 is used for character encoding   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- it is used to control the layout on mobile users-->
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Using just HTML -->
+    <!-- <h1 id="root">Hello world</h1> -->
+    <div id="root"></div>
+
+    <script>
+      // Using JS to manipulate the DOM
+      //document.getElementById("root").innerHTML="Hello Bunny"
+      // create the hello world in js
+      // const heading =document.createElement("root");
+      // heading.innerHTML="Hello chinni";
+      // const root=document.getElementById("root")
+      // root.append(heading)
+
+      //USING REACT
+      //const heading = React.createElement("h1", {}, "Hello world ");
+      const heading = React.createElement(
+        "div",
+        { id: "parent" },
+        React.createElement(
+          "div",
+          { id: "Child" },
+          React.createElement("h1", { id: "root" }, "Iam in H1 Tag")
+        )
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
+    </script>
+  </body>
+</html>
